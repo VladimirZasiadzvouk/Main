@@ -1,4 +1,4 @@
-# Задача 1
+#Задача 1
 
 #my_tuple = (5, 2, 9, 1, 7)
 #max_element = max(my_tuple)
@@ -83,8 +83,26 @@
 
 #Задача 8
 
+def main():
+    n = int(input())
+    possible_numbers = set(range(1, n + 1))
+    
+    while True:
+        line = input().strip()
+        if not line:
+            break
+        parts = line.split()
+        answer = parts[-1]
+        nums = set(map(int, parts[:-1]))
+        if answer == 'YES':
+            possible_numbers &= nums
+        else:
+            possible_numbers -= nums
+    print(' '.join(map(str, sorted(possible_numbers))))
+if __name__ == "__main__":
+    main()
 
-#Задача 9
+#  Задача 9
 
 #school = {'9а': 22,'9б': 23,'9в': 24,'9г': 26,'9д': 23,}
 #school['9б'] = 27 
@@ -94,7 +112,7 @@
 #print("Количество учащихся в классах:", school)
 #print("Общее количество учащихся в 9 классах:", total_students)
 
-#Задача 10
+#  Задача 10
 
 dictionary = {}
 while True:
