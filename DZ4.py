@@ -83,6 +83,24 @@
 
 #Задача 8
 
+def main():
+    n = int(input())
+    possible_numbers = set(range(1, n + 1))
+    
+    while True:
+        line = input().strip()
+        if not line:
+            break
+        parts = line.split()
+        answer = parts[-1]
+        nums = set(map(int, parts[:-1]))
+        if answer == 'YES':
+            possible_numbers &= nums
+        else:
+            possible_numbers -= nums
+    print(' '.join(map(str, sorted(possible_numbers))))
+if __name__ == "__main__":
+    main()
 
 #Задача 9
 
