@@ -1,4 +1,4 @@
-# Задача 1
+#Задача 1
 
 #my_tuple = (5, 2, 9, 1, 7)
 #max_element = max(my_tuple)
