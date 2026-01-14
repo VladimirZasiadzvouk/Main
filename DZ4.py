@@ -102,17 +102,17 @@ def main():
 if __name__ == "__main__":
     main()
 
-# Задача 9
+#  Задача 9
 
-school = {'9а': 22,'9б': 23,'9в': 24,'9г': 26,'9д': 23,}
-school['9б'] = 27 
-school['9е'] = 26
-del school['9д']
-total_students = sum(school.values())
-print("Количество учащихся в классах:", school)
-print("Общее количество учащихся в 9 классах:", total_students)
+#school = {'9а': 22,'9б': 23,'9в': 24,'9г': 26,'9д': 23,}
+#school['9б'] = 27 
+#school['9е'] = 26
+#del school['9д']
+#total_students = sum(school.values())
+#print("Количество учащихся в классах:", school)
+#print("Общее количество учащихся в 9 классах:", total_students)
 
-#Задача 10
+#  Задача 10
 
 dictionary = {}
 while True:
